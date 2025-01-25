@@ -19,7 +19,7 @@ const Home = () => {
 
   const addToCart = async (item) => {
     await axios.post("https://order-backend-w7dt.onrender.com/api/items/cart", item);
-    const res = await axios.get("http://localhost:5000/api/items/cart");
+    const res = await axios.get("https://order-backend-w7dt.onrender.com/api/items/cart");
     setCart(res.data);
   };
 

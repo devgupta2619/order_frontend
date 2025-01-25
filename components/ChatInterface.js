@@ -7,7 +7,7 @@ const ChatInterface = () => {
 
   const handleQuery = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/chat", {
+      const res = await axios.get("https://order-backend-w7dt.onrender.com/api/chat", {
         params: { message: query },
       });
       setResponse(res.data);
